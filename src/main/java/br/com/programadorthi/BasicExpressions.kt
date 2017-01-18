@@ -81,14 +81,16 @@ fun collections() {
 
     println("-- Collections --")
 
-    val list = arrayListOf("Item 1", "Item 2", "Item 3")
+    val list = listOf("Item 1", "Item 2", "Item 3")
     println("List of items: $list")
     println("Get first item in UPPERCASE: ${list[0].toUpperCase()}")
 
     val set = setOf(1, 3, 5)
+    println(set)
     println("We have ${set.filter { it >= 3 }.size} items greater than or equal to 3 in the Set")
 
     val map = mapOf(Pair(1, "Item 1"), Pair(2, "Item 2"), Pair(3, "Item 3"))
+    println(map)
     println("Get second item from map: ${map[2]}")
 
     println()
